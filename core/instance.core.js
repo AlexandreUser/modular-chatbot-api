@@ -19,12 +19,12 @@ class ChatbotModular {
     };
   }
 }
-const chatbot = new ChatbotModular("v1", "John");
+export const modularChatbot = new ChatbotModular("v1", "John");
 
-chatbot.composeDict([
-  { question: "who are you", response: "I'm John" },
-  { question: "where are you from", response: "I'm from Brazil" },
-  { question: "where do you work", response: "I work in Canada" },
-]);
-console.log(chatbot.runProcessorSingle("where are bot from"));
-console.log(chatbot.runProcessorMulti("where are bot from"));
+//chatbot.composeDict([
+//  { question: "who are you", response: "I'm John" },
+//  { question: "where are you from", response: "I'm from Brazil" },
+//  { question: "where do you work", response: "I work in Canada" },
+//]);
+//console.log(chatbot.runProcessorSingle("where are bot from"));
+//console.log(chatbot.runProcessorMulti("where are bot from"));
