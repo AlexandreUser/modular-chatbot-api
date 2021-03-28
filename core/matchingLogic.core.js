@@ -19,7 +19,7 @@ module.exports = {
     };
   },
   generateMulti: function (dict, input) {
-    let tokens = input.split(" ");
+    let tokens = input.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").split(" ");
     let newDict = {};
 
     newDict = dict.map((knowlegde) => {

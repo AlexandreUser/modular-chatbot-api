@@ -19,7 +19,7 @@ class ChatbotModular {
     };
   }
 }
-export const modularChatbot = new ChatbotModular("v1", "John");
+module.exports = new ChatbotModular("v1", "John");
 
 //chatbot.composeDict([
 //  { question: "who are you", response: "I'm John" },
