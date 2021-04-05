@@ -5,7 +5,7 @@ module.exports = {
 
     newDict = dict.map((knowlegde) => {
       let tokenRange = tokens.map((str) => {
-        return knowlegde.question.indexOf(str) !== -1 ? 1 : 0;
+        return knowlegde.question.toLowerCase().indexOf(str) !== -1 ? 1 : 0;
       });
       return (
         tokenRange.reduce((a, b) => {
@@ -24,7 +24,7 @@ module.exports = {
 
     newDict = dict.map((knowlegde) => {
       let tokenRange = tokens.map((str) => {
-        return knowlegde.question.indexOf(str) !== -1 ? 1 : 0;
+        return knowlegde.question.toLowerCase().indexOf(str) !== -1 ? 1 : 0;
       });
       return (
         tokenRange.reduce((a, b) => {

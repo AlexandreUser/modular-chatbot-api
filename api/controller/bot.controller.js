@@ -9,7 +9,14 @@ module.exports = {
 
     res.send({
       result: "done",
-      payload: { response: bot.runProcessorMulti(req.query.question) },
+      payload: { response: bot.runProcessorSingle(req.query.question.toLowerCase()) },
     });
+  },
+  getAllbots(req, res) {
+    let files = [];
+    fs.readdirSync("./bots/").forEach((file) => {
+      files.push(file);
+    });
+    res.send(files);
   },
 };

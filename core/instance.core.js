@@ -9,7 +9,7 @@ class ChatbotModular {
       if (this.debug) {
         console.log(dictComposer);
       }
-      this.dict = dictComposer;
+      this.dict = dictComposer
     };
     this.runProcessorSingle = (input) => {
       return generateSingle(this.dict, input);
